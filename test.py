@@ -8,14 +8,15 @@ def app():
 
 
 def test_basic_test_client(app):
+    # Pass
     request, response = app.test_client.get("/hello")
 
     assert request.method.lower() == "get"
     assert response.body == b"Hello, world."
     assert response.status == 200
 
+    # Fail
     request, response = app.test_client.get("/hello")
-
     assert request.method.lower() == "get"
     assert response.body == b"Hello, world."
     assert response.status == 200
