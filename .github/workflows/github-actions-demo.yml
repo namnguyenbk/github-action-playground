@@ -18,7 +18,7 @@ jobs:
       - name: Notify middle
         uses: zzzze/webhook-trigger@master
         with:
-        data: "{\"progress\": 0.5}"
+          data: "{\"progress\": 0.5}"
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           options: "-H \"Accept: application/json\""
 
@@ -32,6 +32,6 @@ jobs:
       - name: Notify finish
         uses: zzzze/webhook-trigger@master
         with:
-        data: "{\"progress\": 1.0}"
+          data: "{\"progress\": 1.0}"
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           options: "-H \"Accept: application/json\""
