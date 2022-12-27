@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
       input:
-      WEBHOOK_URL: https://willnguyen-api.tunnel.puzl.dev/webhooks/workflow-notifications
+        WEBHOOK_URL: https://willnguyen-api.tunnel.puzl.dev/webhooks/workflow-notifications
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
