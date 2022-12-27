@@ -2,8 +2,8 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   workflow_dispatch:
-      inputs:
-        WEBHOOK_URL: https://willnguyen-api.tunnel.puzl.dev/webhooks/workflow-notifications
+    inputs:
+      WEBHOOK_URL: "https://willnguyen-api.tunnel.puzl.dev/webhooks/workflow-notifications"
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
